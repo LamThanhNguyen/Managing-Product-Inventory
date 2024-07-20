@@ -78,6 +78,7 @@ The database includes the following tables:
 The relationships between these tables are defined using foreign keys and are crucial for maintaining data integrity.
 
 ## API Endpoints
+![Swagger Documentation API](swagger_documentation_api.png)
 
 The API provides the following endpoints:
 
@@ -98,4 +99,4 @@ The API provides the following endpoints:
 ## Examples Using
 
 ## Conclusion
-Feel free to explore and use these endpoints to manage your e-commerce-inventory application efficiently.
+Feel free to explore and use these endpoints to manage your e-commerce inventory application efficiently.
