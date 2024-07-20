@@ -1,5 +1,11 @@
 from enum import Enum
 
+def get_enum_key_from_value(enum_class, value):
+    for key, member in enum_class.__members__.items():
+        if member.value == value:
+            return key
+    return None
+
 # Define an enumeration for product categories
 class Category(Enum):
     """

@@ -34,17 +34,3 @@ class GetInventory(BaseModel):
     quantity: int
     last_updated: datetime
     status: InventoryStatus
-
-T = TypeVar('T')
-class PaginatedInventory(BaseModel, Generic[T]):
-    """
-    Schema for paginated inventory items.
-
-    Attributes:
-        page_number (int): Current page number.
-        total_pages (int): Total number of pages.
-        items (List[T]): List of items on the current page.
-    """
-    page_number: int
-    total_pages: int
-    items: List[T]

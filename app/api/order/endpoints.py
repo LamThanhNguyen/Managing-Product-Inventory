@@ -10,7 +10,7 @@ router = APIRouter()
 # ------------------------ Orders Routes -----------------------------------------------------------
 
 # Endpoint to create a order
-@router.post("/orders/", response_model=OrderResponse)
+@router.post("/", response_model=OrderResponse)
 def create_order(order: OrderCreate, db: Session = Depends(get_db)):
     """
     Create a new order record.

@@ -73,7 +73,7 @@ The database includes the following tables:
 
 - **products:** Represents products in the inventory.
 - **inventory:** Tracks the current state of inventory for each product.
-- **order:** Records order transactions.
+- **orders:** Records orders transactions.
 
 The relationships between these tables are defined using foreign keys and are crucial for maintaining data integrity.
 
@@ -82,7 +82,7 @@ The relationships between these tables are defined using foreign keys and are cr
 The API provides the following endpoints:
 
 - **Product Endpoints:**
-  - `GET /products`:  Get a list of all products (with pagination and filtering options).
+  - `GET /products`:  Get a list of all products with pagination and filtering(name, category) options.
   - `GET /products/{id}`: Get details of a specific product.
   - `POST /products`: Create a new product.
   - `PUT /products/{id}`: Update an existing product.

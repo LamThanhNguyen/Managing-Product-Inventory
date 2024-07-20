@@ -24,9 +24,9 @@ if environment != "production":
         print(f"Warning: The directory '{static_dir}' does not exist. Static files will not be served.")
 
 # Routes
-app.include_router(product_endpoints.router, tags=["Products"])
-app.include_router(inventory_endpoints.router, tags=["Inventory"])
-app.include_router(order_endpoints.router, tags=["Order"])
+app.include_router(product_endpoints.router, prefix="/products",tags=["Products"])
+app.include_router(inventory_endpoints.router, prefix="/inventory", tags=["Inventory"])
+app.include_router(order_endpoints.router, prefix="/orders", tags=["Orders"])
 
 if __name__ == '__main__':
     uvicorn.run(app)

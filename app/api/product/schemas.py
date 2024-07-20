@@ -22,6 +22,21 @@ class CreateProduct(BaseModel):
     quantity: int
     category: Category
 
+class UpdateProduct(BaseModel):
+    """
+    Schema for updating an existing product.
+
+    Attributes:
+        name (str): Name of the product.
+        description (str, optional): Description of the product (default is an empty string).
+        price (float): Price of the product.
+        category (Category): Category of the product.
+    """
+    name: str
+    description: str = ""
+    price: float
+    category: Category
+
 class GetProduct(BaseModel):
     """
     Schema for getting details of a product.
