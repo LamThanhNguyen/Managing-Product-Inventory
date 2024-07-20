@@ -78,7 +78,10 @@ The database includes the following tables:
 The relationships between these tables are defined using foreign keys and are crucial for maintaining data integrity.
 
 ## API Endpoints
-![Swagger Documentation API](swagger_documentation_api.png)
+![Swagger API Documentation](swagger_api_documentation.png)
+
+### The link to Swagger API documentation:
+   * ### http://localhost:8000/docs
 
 The API provides the following endpoints:
 
@@ -94,9 +97,17 @@ The API provides the following endpoints:
   - `GET /inventory/{id}`: Get inventory level for a specific product.
 
 - **Order Endpoints:**
-  - `POST /orders/`:  Create a new order.
+  - `POST /orders/`:  Create a new order (updating inventory).
 
 ## Examples Using
+- **Get a list of all products with pagination and filtering by name and category.**
+- **Get details of a specific product.**
+- **Create a new product.**
+- **Update an existing product.**
+- **Delete a product.**
+- **Get inventory levels for all products.**
+- **Get inventory level for a specific product.**
+- **Create a new product (updating inventory).**
 
 ## Conclusion
 Feel free to explore and use these endpoints to manage your e-commerce inventory application efficiently.
