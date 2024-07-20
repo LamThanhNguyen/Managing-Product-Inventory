@@ -6,7 +6,7 @@ This project showcases the backend of a product inventory management system buil
 - [Setup Instructions](#setup-instructions)
 - [Dependencies](#dependencies)
 - [Database](#database)
-- [API endpoint](#api-endpoint)
+- [API Endpoints](#api-endpoints)
 - [Examples Using](#examples-using)
 - [Conclusion](#conclusion)
 
