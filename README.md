@@ -101,13 +101,21 @@ The API provides the following endpoints:
 
 ## Examples Using
 - **Get a list of all products with pagination and filtering by name and category.**
+![list of all products](usage_images/get_list_product.png)
 - **Get details of a specific product.**
+![details of a specific product](usage_images/get_detail_a_product.png)
 - **Create a new product.**
+![create a new product](usage_images/create_a_product.png)
 - **Update an existing product.**
+![update an existing product](usage_images/update_product.png)
 - **Delete a product.**
+![delete a product](usage_images/delete_product.png)
 - **Get inventory levels for all products.**
+![get inventory levels for all products](usage_images/get_list_inventory.png)
 - **Get inventory level for a specific product.**
-- **Create a new product (updating inventory).**
+![get inventory level for a specific product](usage_images/detail_inventory_by_id.png)
+- **Create a new order (updating inventory).**
+![create a new order](usage_images/create_an_orders.png)
 
 ## Conclusion
 Feel free to explore and use these endpoints to manage your e-commerce inventory application efficiently.
