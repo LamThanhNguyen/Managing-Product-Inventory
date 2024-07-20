@@ -1,0 +1,36 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3306:3306"
+    networks:
+      - webapp-network
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  webapp:
+    build:
+      context: .
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - MYSQL_HOST=mysql
+    depends_on:
+      - mysql
+    networks:
+      - webapp-network
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+
+networks:
+  webapp-network:
+    driver: bridge
+
+volumes:
+  mysql-data:
